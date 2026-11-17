@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOST RESIK 18</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333333;
+      line-height: 1.6;
+    }
+    /* Bagian Atas / Header */
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: #ffffff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 14px;
+      opacity: 0.9;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    /* Wadah Utama */
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 24px;
+      color: #1e293b;
+    }
+
+    /* Susunan 3 Kolom Kamar */
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .room-card {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+    }
+    .room-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Menjaga proporsi foto agar tidak gepeng */
+      background-color: #cbd5e1;
+    }
+    .room-info {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .room-info h3 {
+      font-size: 18px;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .price {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 4px 10px;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .room-info p {
+      font-size: 14px;
+      color: #475569;
+      margin-bottom: 10px;
+    }
+    .room-info ul {
+      padding-left: 18px;
+      font-size: 13px;
+      color: #334155;
+    }
+    .room-info ul li {
+      margin-bottom: 4px;
+    }
+
+    /* Bagian Bawah / Kontak WhatsApp */
+    footer {
+      background-color: #ffffff;
+      border-top: 1px solid #e2e8f0;
+      text-align: center;
+      padding: 36px 20px;
+      margin-top: 40px;
+    }
+    footer h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    footer p {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 20px;
+    }
+    .wa-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 14px 28px;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+      transition: background-color 0.2s;
+    }
+    .wa-button:hover {
+      background-color: #1ebe5d;
+    }
+    .address {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- JUDUL & DESKRIPSI UTAMA KOS -->
+  <header>
+    <h1>Kos Nyaman & Strategis</h1>
+    <p>Lingkungan aman, bersih, bebas banjir, dekat akses transportasi umum dan pusat kuliner.</p>
+  </header>
+
+  <!-- DAFTAR KOLOM KAMAR -->
+  <main class="container">
+    <h2 class="section-title">Pilihan Tipe Kamar</h2>
+
+    <div class="room-grid">
+      
+      <!-- KOLOM 1 -->
+      <div class="room-card">
+        <img src="kamar1.jpg" alt="Foto Kamar Tipe Standar">
+        <div class="room-info">
+          <h3>Kamar Tipe A</h3>
+          <span class="price">Rp 2.200.000 / bulan</span>
+          <p>Tipe kamar paling lega untuk kamu yang butuh ruang ekstra nyaman untuk beraktivitas di dalam kamar, menyimpan barang lebih rapi.</p>
+          <ul>
+            <li>Ukuran kamar 3 x 3 meter</li>
+            <li>Kamar mandi dalam</li>
+            <li>Kasur springbed, meja belajar, & lemari</li>
+            <li>Gratis Wi-Fi & listrik standar</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KOLOM 2 -->
+      <div class="room-card">
+        <img src="kamar2.jpg" alt="Foto Kamar Mandi Dalam">
+        <div class="room-info">
+          <h3>Kamar Tipe B</h3>
+          <span class="price">Rp 2.000.000 / bulan</span>
+          <p>Cocok untuk mahasiswa atau pekerja yang mencari kamar hemat dan nyaman.</p>
+          <ul>
+            <li>Ukuran kamar 3 x 3 meter</li>
+            <li>Kamar mandi dalam</li>
+            <li>Kasur springbed, meja belajar, & lemari</li>
+            <li>Gratis Wi-Fi & listrik standar</li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+  <!-- BAGIAN PALING BAWAH: NOMOR TELEPON & LINK WHATSAPP -->
+  <footer>
+    <h2>Tertarik atau Ingin Survei Lokasi?</h2>
+    <p>Hubungi pengelola kos langsung melalui WhatsApp untuk cek ketersediaan kamar.</p>
+    
+    <!-- Ganti 6281234567890 dengan nomor WA tujuan -->
+    <a href="https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20ketersediaan%20kamar%20kos" target="_blank" class="wa-button">
+      Chat WhatsApp: 0858-8578-5686
+    </a>
+
+    <div class="address">
+      Alamat: Jl. Tembakau Raya No.18, RT.3/RW.1, Pejaten Timur, Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510 • Buka Survei Setiap Hari (08.00 - 20.00 WIB)
+    </div>
+  </footer>
+
+</body>
+</html>
